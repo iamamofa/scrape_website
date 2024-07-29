@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div>
+            <h1 class="text-center">Zillow Listings Scraper</h1>
+            <form method="POST" class="border p-4 shadow rounded">
+                <div class="form-group">
+                    <label for="url">Enter area URL from Zillow</label>
+                    <input type="text" class="form-control" id="url" name="url" placeholder="https://www.zillow.com/homes/for_sale/" required>
+                </div>
+                <div class="form-group">
+                    <label for="bedrooms">Bedrooms (3+)</label>
+                    <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="bathrooms">Bathrooms (2+)</label>
+                    <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="2" required>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="petFriendly" name="petFriendly">
+                    <label class="form-check-label" for="petFriendly">Pet Friendly</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Scrape Listings</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
