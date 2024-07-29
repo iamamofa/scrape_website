@@ -1,0 +1,3 @@
+
+This skeleton is ideal for developers looking to integrate Python, HTML, and JavaScript seamlessly into a single application using Flask such as admin pages, web games, web apps, etc. It facilitates the creation of web-based applications with embedded client-side scripts. This setup is perfect for building full-stack web applications that require interactive elements on the front end while leveraging Python's robust backend capabilities.
+This skeleton is not not a good choice for a backend app.
